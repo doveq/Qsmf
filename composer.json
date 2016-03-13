@@ -1,0 +1,19 @@
+{
+    "name": "qlin/qsmf",
+    "authors": [
+        {
+            "name": "Qlin",
+            "email": "lin@drimk.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.18"
+    },
+
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
