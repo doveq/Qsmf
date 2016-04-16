@@ -11,5 +11,9 @@
 require __DIR__ . '/../bootstrap/autoload.php';
 
 // 装载框架初始化程序
-require __DIR__ . '/../bootstrap/app.php';
+$app = require __DIR__ . '/../bootstrap/app.php';
 
+use Qsmf\Route\Route;
+$route = new Route();
+
+$route->add('/blog/to/:year/:month', ['HelloController','helloAction']);

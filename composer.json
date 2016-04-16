@@ -6,8 +6,15 @@
             "email": "lin@drimk.com"
         }
     ],
+
     "require": {
         "monolog/monolog": "^1.18"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Qsmf\\": "vendor/qsmf"
+        }
     },
 
     "repositories": {
