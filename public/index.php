@@ -16,4 +16,5 @@ $app = require __DIR__ . '/../bootstrap/app.php';
 use Qsmf\Route\Route;
 $route = new Route();
 
-$route->add('/blog/to/:year/:month', ['HelloController','helloAction']);
+$route->add('/post/{id}(/{title})', ['HelloController','helloAction'], ['as' => 'indexPost']);
+$route->dispatch('/blog/to/2016/11');
